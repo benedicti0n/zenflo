@@ -1,7 +1,13 @@
-import Tiptap from "./components/TipTap/Tiptap";
+import ContentForm from '@/components/content-form'
 
 export default function Home() {
   return (
-    <Tiptap />
+    <section className='py-24'>
+      <div className='container'>
+        <h1 className='text-3xl font-bold'>Write a blog</h1>
+
+        <ContentForm />
+      </div>
+    </section>
   )
 }
