@@ -19,17 +19,17 @@ import { handleImageDrop, handleImagePaste } from 'novel/plugins'
 import {
     slashCommand,
     suggestionItems
-} from '@/components/editor/slash-command'
-import EditorMenu from '@/components/editor/editor-menu'
-import { uploadFn } from '@/components/editor/image-upload'
-import { defaultExtensions } from '@/components/editor/extensions'
-import { TextButtons } from '@/components/editor/selectors/text-buttons'
-import { LinkSelector } from '@/components/editor/selectors/link-selector'
-import { NodeSelector } from '@/components/editor/selectors/node-selector'
-import { MathSelector } from '@/components/editor/selectors/math-selector'
-import { ColorSelector } from '@/components/editor/selectors/color-selector'
+} from '@/components/Novel/editor/slash-command'
+import EditorMenu from '@/components/Novel/editor/editor-menu'
+import { uploadFn } from '@/components/Novel/editor/image-upload'
+import { defaultExtensions } from '@/components/Novel/editor/extensions'
+import { TextButtons } from '@/components/Novel/editor/selectors/text-buttons'
+import { LinkSelector } from '@/components/Novel/editor/selectors/link-selector'
+import { NodeSelector } from '@/components/Novel/editor/selectors/node-selector'
+import { MathSelector } from '@/components/Novel/editor/selectors/math-selector'
+import { ColorSelector } from '@/components/Novel/editor/selectors/color-selector'
 
-import { Separator } from '@/components/ui/separator'
+import { Separator } from '@/components/Novel/ui/separator'
 
 const hljs = require('highlight.js')
 

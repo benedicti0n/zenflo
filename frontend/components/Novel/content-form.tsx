@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { convertHtmlToNotionBlock } from '../utils/HTMLtoNotionBlocks'
-import Editor from '@/components/editor/editor'
+import { convertHtmlToNotionBlock } from '../../utils/HTMLtoNotionBlocks'
+import Editor from '@/components/Novel/editor/editor'
 
 export const defaultValue = {
     type: 'doc',
