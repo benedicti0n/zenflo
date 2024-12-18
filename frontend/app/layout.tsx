@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/Novel/theme-provider'
 
 import './prosemirror.css'
 import './globals.css'
+import SessionProviderWrapper from "@/helpers/SessionProviderWrapper"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={`flex min-h-screen flex-col ${inter.className}`}>
+        <SessionProviderWrapper>
         <ThemeProvider
           enableSystem
           attribute='class'
@@ -33,6 +35,7 @@ export default function RootLayout({
         >
           <main className='grow'>{children}</main>
         </ThemeProvider>
+        </SessionProviderWrapper>
       </body>
     </html>
   )
